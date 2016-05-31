@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/pic_lobby"
+        android:layout_width="wrap_content"
+        android:layout_height="192dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/theatre_lobby_white" />
+
+    <ImageView
+        android:id="@+id/pic_coffee"
+        android:layout_width="256dp"
+        android:layout_height="90dp"
+        android:layout_below="@id/pic_lobby"
+        android:scaleType="centerCrop"
+        android:src="@drawable/coffee_break" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pic_lobby"
+        android:layout_toRightOf="@id/pic_coffee">
+
+        <ImageView
+            android:id="@+id/pic_person_face"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/person_face" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="+1"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/btn_left_arrow"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/ic_arrow_back_48px_128px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/btn_left_arrow"
+        android:layout_toRightOf="@id/btn_left_arrow"
+        android:text="Agitprop - Selection of documentaries"
+        android:textAllCaps="true"
+        android:textColor="#252526"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pic_coffee"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:text="Address: Orpheus Open Air Cinema, Todor Kableshkov Str."
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_last_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_address"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:text="Agitprop takes part in the Night with a special selection of documentaries:"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_last_info">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="11 септември"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:background="#777" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/changingmoon" />
+
+                <TextView
+                    android:id="@+id/txt_film_name_1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="32dp"
+                    android:text="Tzetanka"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="20:00 - 21:00" />
+
+                <ImageView
+                    android:id="@+id/icon_star_1_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/txt_film_name_1_1"
+                    android:paddingRight="8dp"
+                    android:src="@android:drawable/star_big_off" />
+
+                <View
+                    android:id="@+id/line_small_1_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/icon_star_1_1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#777" />
+
+                <ImageView
+                    android:id="@+id/icon_moon_1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_small_1_1"
+                    android:src="@drawable/changingmoon" />
+
+                <TextView
+                    android:id="@+id/txt_film_name_1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_small_1_1"
+                    android:layout_toRightOf="@id/icon_moon_1_2"
+                    android:paddingLeft="16dp"
+                    android:text="The Last Black Sea Pirates"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/line_small_1_1"
+                    android:text="22:00 - 23:00" />
+
+                <ImageView
+                    android:id="@+id/icon_star_1_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/txt_film_name_1_2"
+                    android:paddingRight="8dp"
+                    android:src="@android:drawable/star_big_off" />
+
+                <View
+                    android:id="@+id/line_small_1_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/icon_star_1_2"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#777" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="16dp"
+                android:text="12 септември"
+                android:textColor="#000"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="8dp"
+                android:background="#777" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/changingmoon" />
+
+                <TextView
+                    android:id="@+id/txt_film_name_2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="32dp"
+                    android:text="Kusmet"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:text="20:00 - 21:00" />
+
+                <ImageView
+                    android:id="@+id/icon_star_2_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/txt_film_name_2_1"
+                    android:paddingRight="8dp"
+                    android:src="@android:drawable/star_big_off" />
+
+                <View
+                    android:id="@+id/line_small_2_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/icon_star_2_1"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#777" />
+
+                <ImageView
+                    android:id="@+id/icon_moon_2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_small_2_1"
+                    android:src="@drawable/changingmoon" />
+
+                <TextView
+                    android:id="@+id/txt_film_name_2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/line_small_2_1"
+                    android:layout_toRightOf="@id/icon_moon_2_2"
+                    android:paddingLeft="16dp"
+                    android:text="Love and Engineering"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/line_small_2_1"
+                    android:text="22:00 - 23:00" />
+
+                <ImageView
+                    android:id="@+id/icon_star_2_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/txt_film_name_2_2"
+                    android:paddingRight="8dp"
+                    android:src="@android:drawable/star_big_off" />
+
+                <View
+                    android:id="@+id/line_small_2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/icon_star_2_2"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="4dp"
+                    android:background="#777" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
